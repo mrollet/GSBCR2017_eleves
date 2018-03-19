@@ -1,4 +1,4 @@
-﻿// La génération de code T4 est activée pour le modèle 'D:\Visual Studio Projects\GSBCR2017\GSBCR.modele\gsb_visite.edmx'. 
+﻿// La génération de code T4 est activée pour le modèle 'D:\Module PPE3\GSB Gestion Compte Rendus\version 2017\GSBCR2017_eleves\GSBCR.modele\gsb_visite.edmx'. 
 // Pour activer la génération de code héritée, définissez la valeur de la propriété
 // du concepteur 'Stratégie de génération de code' sur 'ObjectContext hérité'. Cette propriété est disponible dans la fenêtre Propriétés lorsque le modèle
 //  est ouvert dans le concepteur.

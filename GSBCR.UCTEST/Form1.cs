@@ -20,7 +20,7 @@ namespace GSBCR.UCTEST
             InitializeComponent();
             bsMedoc.DataSource = Manager.ChargerMedicaments();
             cbxMedoc.DataSource = bsMedoc;
-            //cbxMedoc.ValueMember = "MED_DEPOTLEGAL";
+            cbxMedoc.ValueMember = "MED_DEPOTLEGAL";
             cbxMedoc.DisplayMember = "MED_NOMCOMMERCIAL";
         }
 

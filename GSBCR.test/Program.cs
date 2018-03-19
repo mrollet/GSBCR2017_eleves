@@ -79,7 +79,6 @@ namespace GSBCR.test
             r.RAP_ETAT = "1";
             r.RAP_CONFIANCE= "1";
             r.RAP_BILAN = "Tout va bien!";
-            r.RAP_MED1 = "3MYC7";
             try
             {
                 Manager.CreateRapport(r);
