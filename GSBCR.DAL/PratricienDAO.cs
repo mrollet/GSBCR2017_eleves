@@ -14,24 +14,22 @@ namespace GSBCR.DAL
         public static PRATICIEN FindById(Int16 pranum)
         {
             //A faire : rechercher un pratricien par son numéro
-            PRATICIEN pa = null;
-            using (var context = new GSB_VisiteEntities())
-            {
-                //désactiver le chargement différé
-                //context.Configuration.LazyLoadingEnabled = false;
-                var req = from p in context.PRATICIENs.Include("LeType")
-                          where p.PRA_NUM == pranum
-                          select p;
-                pa = req.SingleOrDefault<PRATICIEN>();
-
-            }
-            return pa;
+            return null;
         }
 
         public static List<PRATICIEN> FindAll()
         {
             //A faire : charger tous les praticiens
-            return null;
+            List<PRATICIEN> pats = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                //désactiver le chargement différé
+                //context.Configuration.LazyLoadingEnabled = false;
+                var req = from p in context.PRATICIENs.Include("LeType")
+                          select p;
+                pats = req.ToList<PRATICIEN>();
+            }
+            return pats;
         }
 
         public static List<PRATICIEN> FindByType(string code)

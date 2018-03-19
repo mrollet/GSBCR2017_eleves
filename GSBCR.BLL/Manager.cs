@@ -146,14 +146,16 @@ namespace GSBCR.BLL
         /// </summary>
         public static List<MOTIF_VISITE> ChargerMotifVisites()
         {
-            return null;
+            List<MOTIF_VISITE> lmv = MotifVisiteDAO.FindAll();
+            return lmv;
         }
         /// <summary>
         /// Permet de charger tous les praticiens
         /// </summary>
         public static List<PRATICIEN> ChargerPraticiens()
         {
-            return null;
+            List<PRATICIEN> lp = PratricienDAO.FindAll();
+            return lp;
         }
         /// <summary>
         /// Permet de charger un praticien à partir de son numéro

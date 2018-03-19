@@ -21,7 +21,17 @@ namespace GSBCR.DAL
         public static List<MOTIF_VISITE> FindAll()
         {
             //A faire : charger tous les motifs visite
-            return null;
+            List<MOTIF_VISITE> motifs = null;
+            using (var context = new GSB_VisiteEntities())
+            {
+                //désactiver le chargement différé
+                //context.Configuration.LazyLoadingEnabled = false;
+                var req = from m in context.MOTIF_VISITE
+                          select m;
+                motifs = req.ToList<MOTIF_VISITE>();
+
+            }
+            return motifs;
         }
     }
 }
